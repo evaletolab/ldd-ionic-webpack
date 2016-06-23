@@ -1,0 +1,7 @@
+{
+  "name": "ldd-ionic",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch"
+  ]
+}
