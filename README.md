@@ -1,4 +1,4 @@
-ldd-ionic
+ldd-ionic-webpack
 =============
 
 
@@ -7,7 +7,7 @@ ldd-ionic
 Clone the repository
 
 ```bash
-$ git clone https://github.com/evaletolab/ldd-ionic.git
+$ git clone https://github.com/evaletolab/ldd-ionic-webpack.git
 ```
 
 Install the dependencies
