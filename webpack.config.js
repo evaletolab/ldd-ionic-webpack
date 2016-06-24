@@ -8,6 +8,7 @@ var path            = require('path'),
   webpack           = require('webpack'),
   HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
 
   cache: true,
@@ -37,6 +38,8 @@ module.exports = {
       test   : /\.trop-index.html$/,
       loader : 'html'
     }, 
+    // the url-loader uses DataUrls. 
+    // the file-loader emits files. 
     {
       test: /\.html$/,
       _loader: 'ngtemplate?relativeTo=' + __dirname + '/!html',
