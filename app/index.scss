@@ -20,3 +20,69 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../bower_components/ionic/release/fonts" !default;
 
 @import "~ionic/scss/ionic";
+
+.scroll{
+	height:100%!important;
+	width:100%;
+}
+
+.on-show-test{
+		transition: all .600s ease-in-out;
+					transform:scale(100);          
+}
+
+
+.on-show{
+  -webkit-animation:bounceIn .7s linear;
+     -moz-animation:bounceIn .7s linear;
+          animation:bounceIn .7s linear; 
+}
+
+
+.zone{
+    text-align: center;
+    margin: 0px auto;
+    width: 200px;
+    padding-top: 20%;
+}
+
+.zone .title{
+	color: rgb(12, 96, 238);
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.zone .button{
+    border: 30px solid #0c60ee;
+    border-radius: 50%;
+    margin: 10% auto;
+    width: 150px;
+    height: 150px;
+    padding: 5%;
+}
+
+.zone .button .fa{
+	color: rgb(12, 96, 238);
+}
+
+.slider {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+/*.slider-slide {
+  color: #000;
+  background-color: #ddd;
+}*/
+
+.button.ng-hide{
+  display:none;
+}
+
+.zone, .scroll {
+  height: 100%;
+  min-height: 100%;
+}

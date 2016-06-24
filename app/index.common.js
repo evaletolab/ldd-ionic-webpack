@@ -18,15 +18,15 @@ require('angular-ui-router');
 require('ionic/release/js/ionic');
 require('ionic/release/js/ionic-angular');
 
-var libsModule = module.exports = angular.module('common', ['ionic']);
+var common = module.exports = angular.module('common', ['ionic']);
 
-libsModule.run(function ($rootScope, $window) {
+common.run(function ($rootScope, $window) {
   $window.addEventListener('resize', function () {
     $rootScope.$broadcast('windowResize');
   });
 });
 
-libsModule.ionicBootstrap = function (module, window) {
+common.ionicBootstrap = function (module, window) {
   if (!window || !window.document) {
     throw new Error('window and document objects required.');
   }
